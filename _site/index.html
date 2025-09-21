@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  
+
+  <title>Secure Recognition</title>
+
+  
+
+  <meta name="description" content="Security and Analysis on Biometric Recognition/Authentication">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+
+
+    
+      
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/SecureFace/assets/css/bootstrap-social.css">
+    
+      <link rel="stylesheet" href="/SecureFace/assets/css/beautifuljekyll.css">
+    
+  
+
+  
+
+  
+  
+  
+    
+      <link rel="stylesheet" href="/SecureFace/assets/css/pastel.css">
+    
+  
+
+  
+
+  
+  <meta property="og:site_name" content="Secure Recognition">
+  <meta property="og:title" content="Secure Recognition">
+  <meta property="og:description" content="Security and Analysis on Biometric Recognition/Authentication">
+
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://0.0.0.0:4000/SecureFace/">
+  <link rel="canonical" href="http://0.0.0.0:4000/SecureFace/">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+
+  <meta property="twitter:title" content="Secure Recognition">
+  <meta property="twitter:description" content="Security and Analysis on Biometric Recognition/Authentication">
+
+  
+
+  
+
+
+  
+
+  
+
+</head>
+
+
+<body>
+
+  
+
+
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://0.0.0.0:4000/SecureFace">Secure Recognition</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto"></ul>
+  </div>
+
+  
+
+  
+
+</nav>
+
+
+
+
+
+  <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container-md">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+        <div class="page-heading">
+          <h1>Secure Recognition</h1>
+          
+            
+              <hr class="small">
+              <span class="page-subheading">Security and Analysis on Biometric Recognition/Authentication</span>
+            
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class=" container-md " role="main">
+  <div class="row">
+    <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
+      
+
+      <p>This webpage introduces a series of research papers on “Secure Biometric Recognition” published by members of <strong>C&amp;A Laboratory @ Hanyang University</strong> since 2021. Our primary focus is on facial recognition systems, which are widely deployed in practice; however, we are also broadening our scope to include other biometrics, such as voice.</p>
+
+<hr />
+<p class="text-2xl text-strong">Contributors</p>
+
+<ul>
+  <li><strong>Project Leader</strong>
+    <ul>
+      <li>Prof. Jae Hong Seo</li>
+    </ul>
+  </li>
+  <li><strong>Current Members</strong>
+    <ul>
+      <li>Chanwoo Hwang</li>
+      <li>Changjin Kim</li>
+      <li>Dongsoo Kim</li>
+      <li>Minsu Kim</li>
+      <li>Sunpill Kim</li>
+      <li>Seunghun Paik</li>
+    </ul>
+  </li>
+  <li><strong>Past Members</strong>
+    <ul>
+      <li>Seongae Baek, Bora Jeong, Sangyun Shin</li>
+    </ul>
+  </li>
+  <li><strong>Collaborators</strong>
+    <ul>
+      <li>A*star, Cryptolab, Jeonbuk National University, Samsung Electronics</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p class="text-2xl text-strong">Attacks/Analysis Methods</p>
+
+<p class="ml-4">[8] <em>General Security Analysis for Face Template Protection Methods from Cryptographic Hash Functions</em></p>
+<p class="ml-12"><!-- Seunghun Paik, Minsu Kim, Sunpill Kim, and Jae Hong Seo   -->
+  <strong>Preprint</strong>  <br />
+  <strong class="chip chip--cherry">Analysis</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--coral">TemplateRecovery/Imporsonation</strong></p>
+
+<p class="ml-4">[7] <em>On the Reversibility of Locality-Sensitive Hashing-based Biometric Template Protections</em></p>
+<p class="ml-12"><!-- Seunghun Paik, Chanwoo Hwang, Sunpill Kim, and Jae Hong Seo   -->
+  <strong>Preprint</strong>  <br />
+  <strong class="chip chip--crimson">Attack</strong><strong class="chip chip--mint">BTP</strong><strong class="chip chip--coral">TemplateRecovery/Imporsonation</strong></p>
+
+<p class="ml-4">[6] <em>Scores Know Bob’s Voice: Non-Adaptive Speaker Impersonation Attack</em></p>
+<p class="ml-12"><!-- Chanwoo Hwang, Sunpill Kim, Yong Kiam Tan, Tianchi Liu, Seunghun Paik, Dongsoo Kim, Soumik Mondal, Khin Mi Mi Aung, and Jae Hong Seo   -->
+  <strong>Preprint</strong>  <br />
+  <strong class="chip chip--crimson">Attack</strong><strong class="chip chip--navy">Speaker</strong><strong class="chip chip--coral">TemplateRecovery/Imporsonation</strong></p>
+<p class="ml-4">[5] <em>Non-adaptive Adversarial Face Generation</em></p>
+<p class="ml-12"><!-- Sunpill Kim, Seunghun Paik, Chanwoo Hwang, Minsu Kim, and Jae Hong Seo   -->
+  <strong class="text-sky">NeurIPS</strong> 2025 · <a href="https://arxiv.org/abs/2507.12107">arXiv</a>  <br />
+  <strong class="chip chip--crimson">Attack</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--wine">AdversarialAttacks</strong></p>
+<p class="ml-4">[4] <em>A Survey of Model Inversion Attacks on Image</em></p>
+<p class="ml-12"><!-- Changjin Kim, Chanwoo Hwang, Sunpill Kim, and Jae Hong Seo   -->
+  <strong class="text-sky">ICTC</strong> 2025     <br />
+  <strong class="chip chip--crimson">Attack</strong><strong class="chip chip--darkgrey">Survey</strong></p>
+<p class="ml-4">[3] <em>Scores Tell Everything about Bob: Non-adaptive Face Reconstruction on Face Recognition Systems</em></p>
+<p class="ml-12"><!-- Sunpill Kim, Yong Kiam Tan, Bora Jeong, Soumik Mondal, Khin Mi Mi Aung, and Jae Hong Seo   -->
+  <strong class="text-sky">IEEE SP</strong> 2024 · <a href="https://ieeexplore.ieee.org/document/10646766">proceeding</a><br />
+  <strong class="chip chip--crimson">Attack</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--coral">TemplateRecovery/Imporsonation</strong></p>
+<p class="ml-4">[2] <em>Security Analysis on Locality-Sensitive Hashing-based Biometric Template Protection Schemes</em>**</p>
+<p class="ml-12"><!-- Seunghun Paik, Sunpill Kim, and Jae Hong Seo   -->
+  <strong class="text-sky">BMVC</strong> 2023 · <a href="https://proceedings.bmvc2023.org/535/">proceeding</a> <br />
+  <strong class="chip chip--crimson">Attack</strong><strong class="chip chip--mint">BTP</strong><strong class="chip chip--coral">TemplateRecovery/Imporsonation</strong></p>
+<p class="ml-4">[1] <em>Analysis on Secure Triplet Loss</em></p>
+<p class="ml-12"><!-- Bora Jeong, Sunpill Kim, Seunghun Paik, and Jae Hong Seo   -->
+  <strong class="text-crimson">IEEE Access</strong> 10: 124355–124362 (2022) · <a href="https://ieeexplore.ieee.org/document/9965373">DOI</a><br />
+  <strong class="chip chip--crimson">Attack</strong><strong class="chip chip--mint">BTP</strong><strong class="chip chip--coral">TemplateRecovery/Imporsonation</strong></p>
+<hr />
+
+<p class="text-2xl text-strong">Defense Methods</p>
+
+<p class="ml-4">[5] <em>SilverMask: Face Template Protection with Fine-Grained Noise Correction</em></p>
+<p class="ml-12"><!-- Minsu Kim, Seunghun Paik, Seongae Baek, Sangyun Shin, Sunpill Kim, and Jae Hong Seo   -->
+    <strong>Preprint</strong>  <br />
+    <strong class="chip chip--darkblue">Defense</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--sky">TemplateProtection</strong></p>
+
+<p class="ml-4">[4] <em>Towards Certifiably Robust Face Recognition: Analyses and Improvements</em></p>
+<p class="ml-12"><!-- Seunghun Paik, Dongsoo Kim, Chanwoo Hwang, Sunpill Kim, and Jae Hong Seo   -->
+  <strong>Preprint</strong>  <br />
+  <strong class="chip chip--darkblue">Defense</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--wine">AdversarialAttacks</strong></p>
+<p class="ml-4">[3] <em>IDFace: Face Template Protection for Efficient and Secure Identification</em></p>
+<p class="ml-12"><!-- Sunpill Kim, Seunghun Paik, Chanwoo Hwang, Dongsoo Kim, Junbum Shin, and Jae Hong Seo   -->
+  <strong class="text-sky">ICCV</strong> 2025 · <a href="https://arxiv.org/abs/2507.12050">arXiv</a> <br />
+  <strong class="chip chip--darkblue">Defense</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--sky">TemplateProtection</strong></p>
+<p class="ml-4">[3] <em>Deep Face Template Protection in the Wild</em></p>
+<!-- Sunpill Kim, Hoyong Shin, and Jae Hong Seo   -->
+<p class="ml-12"><strong class="text-crimson">Pattern Recognition</strong> 162: 111336 (2025) · <a href="https://linkinghub.elsevier.com/retrieve/pii/S0031320324010872">DOI</a>  <br />
+  <strong class="chip chip--darkblue">Defense</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--sky">TemplateProtection</strong></p>
+<p class="ml-4">[2] <em>Towards Certifiably Robust Face Recognition</em></p>
+<p class="ml-12"><!-- Seunghun Paik, Dongsoo Kim, Chanwoo Hwang, Sunpill Kim, and Jae Hong Seo   -->
+ <strong class="text-sky">ECCV</strong> 2024 · <a href="https://link.springer.com/chapter/10.1007/978-3-031-73013-9_9">proceeding</a>  <br />
+ <strong class="chip chip--darkblue">Defense</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--wine">AdversarialAttacks</strong></p>
+
+<p class="ml-4">[1] <em>IronMask: Modular Architecture for Protecting Deep Face Template</em></p>
+<p class="ml-12"><!-- Sunpill Kim, Yunseong Jeong, Jinsu Kim, Jungkon Kim, Hyung Tae Lee, and Jae Hong Seo   -->
+  <strong class="text-sky">CVPR</strong> 2021 · <a href="https://arxiv.org/abs/2104.02239">arXiv</a> <br />
+  <strong class="chip chip--darkblue">Defense</strong><strong class="chip chip--violet">Face</strong><strong class="chip chip--sky">TemplateProtection</strong></p>
+
+<!-- 
+
+- 문서: /SecureFace/docs/
+- 데모:  /SecureFace/demo/
+- GitHub: https://github.com/jaehongseo/SecureFace -->
+
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+  <div class="container-md beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <ul class="list-inline text-center footer-links"></ul>
+
+      
+      <p class="copyright text-muted">
+      
+      2025
+
+      
+
+      
+
+      
+
+      </p>
+      <p class="theme-by text-muted">
+        Powered by
+        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  
+    
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/SecureFace/assets/js/beautifuljekyll.js"></script>
+    
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

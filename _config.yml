@@ -1,0 +1,13 @@
+# 프로젝트 페이지(예: https://jaehongseo.github.io/SecureFace)
+repository: jaehongseo/SecureFace
+url: "https://jaehongseo.github.io"
+baseurl: "/SecureFace"
+
+# 테마: Beautiful Jekyll (remote_theme 방식)
+remote_theme: daattali/beautiful-jekyll@6.0.1
+plugins:
+  - jekyll-remote-theme
+
+# 사이트 기본
+title: Secure Recognition
+description: Project Page of C&A Lab @ Hanyang University
