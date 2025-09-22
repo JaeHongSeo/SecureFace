@@ -7,7 +7,7 @@ css: [/assets/css/pastel.css]
 # 히어로 이미지가 있으면 주석 해제
 # cover-img: /assets/hero.jpg
 ---
-This webpage introduces a series of research papers on "Secure Biometric Recognition" published by members of **C&A Laboratory @ Hanyang University** since 2021. Our primary focus is on facial recognition systems, which are widely deployed in practice; however, we are also broadening our scope to include other biometrics, such as voice.
+This webpage introduces a series of research papers on *"Secure Biometric Recognition"* published by members of **C&A Laboratory @ Hanyang University** since 2021. Our primary focus is on facial recognition systems, which are widely deployed in practice; however, we are also broadening our scope to include other biometrics, such as voice.
 
 ---
 Contributors 
